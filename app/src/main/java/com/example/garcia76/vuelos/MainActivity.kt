@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         disposable?.dispose()
+        showArticles()
     }
 
         override fun onCreateOptionsMenu(menu: Menu): Boolean {
